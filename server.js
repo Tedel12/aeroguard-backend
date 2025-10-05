@@ -1,8 +1,8 @@
 import express from "express";
 import dotenv from "dotenv";
 import cors from "cors";
-import predictRouter from "./api/predict.js";
-import alertRouter from "./api/alerts.js";
+// import predictRouter from "./api/predict.js";
+// import alertRouter from "./api/alerts.js";
 
 dotenv.config();
 
@@ -14,8 +14,8 @@ app.get("/", (req, res) => {
   res.send("✅ Air-Qualify Backend is running");
 });
 
-app.use("/predict", predictRouter);
-app.use("/alerts", alertRouter);
+// app.use("/predict", predictRouter);
+// app.use("/alerts", alertRouter);
 
 export default app;
 
