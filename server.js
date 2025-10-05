@@ -1,8 +1,8 @@
 import express from "express";
 import dotenv from "dotenv";
 import cors from "cors";
-import predictRouter from "./predict.js";
-import alertRouter from "./alerts.js";
+import predictRouter from "./api/predict.js";
+import alertRouter from "./api/alerts.js";
 
 dotenv.config();
 
