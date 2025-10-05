@@ -18,3 +18,9 @@ app.use("/predict", predictRouter);
 app.use("/alerts", alertRouter);
 
 export default app;
+
+
+// Ajoute ceci pour Vercel Node server
+app.listen(process.env.PORT || 3000, () => {
+  console.log("Server running...");
+});
